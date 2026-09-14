@@ -7,24 +7,44 @@
   <meta name="description" content="Tienda online de cosmética brasileña en Perú. Productos para cabello, rizos, tratamientos y cuidado personal.">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="topbar">COSMÉTICA BRASILEÑA · PERÚ · CATÁLOGO ONLINE</div>
+
+  <div class="topbar">
+    COSMÉTICA BRASILEÑA · PERÚ · CATÁLOGO ONLINE
+  </div>
 
   <header class="header">
+
     <div class="header-main">
+
       <a class="logo" href="#">
         <div class="logo-main">Brasil Perú</div>
         <div class="logo-sub">Tienda Online</div>
       </a>
+
       <div class="search">
         <span>⌕</span>
-        <input id="searchInput" type="search" placeholder="Buscar producto, marca o categoría...">
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Buscar producto, marca o categoría..."
+        >
       </div>
+
       <div class="header-actions">
-        <button class="icon-btn" id="consultButton">💬 Consultar</button>
-        <button class="icon-btn" id="cartButton">🛒 Carrito <span class="cart-count" id="cartCount">0</span></button>
+        <button class="icon-btn" id="consultButton">
+          💬 Consultar
+        </button>
+
+        <button class="icon-btn" id="cartButton">
+          🛒 Carrito
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
       </div>
+
     </div>
+
     <nav class="nav">
       <a href="#productos">Tienda</a>
       <a href="#categorias">Categorías</a>
@@ -32,122 +52,411 @@
       <a href="#destacados">Destacados</a>
       <a href="#contacto">Contacto</a>
     </nav>
+
   </header>
 
+
   <main>
+
+    <!-- HERO -->
+
     <section class="hero">
+
       <div class="hero-inner">
+
         <div>
-          <div class="eyebrow">🇧🇷 Belleza brasileña en Perú</div>
-          <h1>Tu cabello. Tu esencia. Tu Brasil.</h1>
-          <p>Descubre una selección de cosmética brasileña para cuidar, hidratar y definir tu cabello con productos originales y de alta demanda.</p>
+
+          <div class="eyebrow">
+            🇧🇷 Belleza brasileña en Perú
+          </div>
+
+          <h1>
+            Tu cabello. Tu esencia. Tu Brasil.
+          </h1>
+
+          <p>
+            Descubre una selección de cosmética brasileña para cuidar,
+            hidratar y definir tu cabello con productos originales y de
+            alta demanda.
+          </p>
+
           <div class="hero-actions">
-            <a class="primary" href="#productos">VER PRODUCTOS</a>
-            <a class="secondary" href="#categorias">EXPLORAR CATEGORÍAS</a>
+
+            <a class="primary" href="#productos">
+              VER PRODUCTOS
+            </a>
+
+            <a class="secondary" href="#categorias">
+              EXPLORAR CATEGORÍAS
+            </a>
+
           </div>
+
         </div>
+
+
         <div class="hero-art">
+
           <div class="hero-card">
-            <img src="assets/sos-cachos-oleo-manga-500g.jpg" alt="Salon Line S.O.S Cachos Óleo de Manga">
+
+            <img
+              src="assets/oleodemanga.jpg"
+              alt="Salon Line S.O.S Cachos Óleo de Manga"
+            >
+
           </div>
-          <div class="hero-label">SALON LINE · S.O.S CACHOS</div>
+
+          <div class="hero-label">
+            SALON LINE · S.O.S CACHOS
+          </div>
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- CATEGORÍAS -->
 
     <section class="section" id="categorias">
+
       <div class="section-head">
+
         <div>
-          <div class="kicker">Compra por categoría</div>
-          <h2>Encuentra tu rutina</h2>
+
+          <div class="kicker">
+            Compra por categoría
+          </div>
+
+          <h2>
+            Encuentra tu rutina
+          </h2>
+
         </div>
-        <p class="section-intro">Selecciona una categoría para filtrar el catálogo.</p>
+
+        <p class="section-intro">
+          Selecciona una categoría para filtrar el catálogo.
+        </p>
+
       </div>
+
+
       <div class="categories">
-        <button class="category-chip active" data-category="Todos">Todos</button>
-        <button class="category-chip" data-category="Cabello">Cabello</button>
-        <button class="category-chip" data-category="Rizos">Rizos</button>
-        <button class="category-chip" data-category="Kids">Kids</button>
-        <button class="category-chip" data-category="Tratamientos">Tratamientos</button>
+
+        <button
+          class="category-chip active"
+          data-category="Todos"
+        >
+          Todos
+        </button>
+
+        <button
+          class="category-chip"
+          data-category="Cabello"
+        >
+          Cabello
+        </button>
+
+        <button
+          class="category-chip"
+          data-category="Rizos"
+        >
+          Rizos
+        </button>
+
+        <button
+          class="category-chip"
+          data-category="Kids"
+        >
+          Kids
+        </button>
+
+        <button
+          class="category-chip"
+          data-category="Tratamientos"
+        >
+          Tratamientos
+        </button>
+
       </div>
+
     </section>
+
+
+    <!-- PRODUCTOS -->
 
     <section class="section" id="productos">
+
       <div class="section-head">
+
         <div>
-          <div class="kicker">Catálogo</div>
-          <h2>Productos destacados</h2>
+
+          <div class="kicker">
+            Catálogo
+          </div>
+
+          <h2>
+            Productos destacados
+          </h2>
+
         </div>
-        <p class="section-intro">Los precios y el stock se incorporarán cuando estén definidos.</p>
+
+        <p class="section-intro">
+          Los precios y el stock se incorporarán cuando estén definidos.
+        </p>
+
       </div>
-      <div class="products" id="productGrid"></div>
+
+      <div
+        class="products"
+        id="productGrid"
+      ></div>
+
     </section>
+
+
+    <!-- MARCAS -->
 
     <section class="section brands" id="marcas">
+
       <div class="section-head">
+
         <div>
-          <div class="kicker">Marcas</div>
-          <h2>Cosmética brasileña</h2>
+
+          <div class="kicker">
+            Marcas
+          </div>
+
+          <h2>
+            Cosmética brasileña
+          </h2>
+
         </div>
-        <p class="section-intro">Empezamos con Salon Line y podremos ampliar el catálogo con nuevas marcas.</p>
+
+        <p class="section-intro">
+          Empezamos con Salon Line y podremos ampliar el catálogo
+          con nuevas marcas.
+        </p>
+
       </div>
+
+
       <div class="brand-list">
-        <div class="brand-pill">Salon Line</div>
-        <div class="brand-pill">Skala</div>
-        <div class="brand-pill">Novex</div>
-        <div class="brand-pill">Lola Cosmetics</div>
-        <div class="brand-pill">Bio Extratus</div>
+
+        <div class="brand-pill">
+          Salon Line
+        </div>
+
+        <div class="brand-pill">
+          Skala
+        </div>
+
+        <div class="brand-pill">
+          Novex
+        </div>
+
+        <div class="brand-pill">
+          Lola Cosmetics
+        </div>
+
+        <div class="brand-pill">
+          Bio Extratus
+        </div>
+
       </div>
+
     </section>
+
+
+    <!-- CONFIANZA -->
 
     <section class="section" id="destacados">
+
       <div class="section-head">
+
         <div>
-          <div class="kicker">Compra con confianza</div>
-          <h2>Brasil → Perú</h2>
+
+          <div class="kicker">
+            Compra con confianza
+          </div>
+
+          <h2>
+            Brasil → Perú
+          </h2>
+
         </div>
+
       </div>
+
+
       <div class="trust">
-        <div class="trust-card"><b>🇧🇷 Selección brasileña</b><span>Catálogo enfocado en marcas y líneas de cosmética brasileña.</span></div>
-        <div class="trust-card"><b>📦 Envíos en Perú</b><span>La información de entrega se configurará según tus zonas de atención.</span></div>
-        <div class="trust-card"><b>💬 Atención personalizada</b><span>Podremos conectar el catálogo con WhatsApp para cerrar cada pedido.</span></div>
+
+        <div class="trust-card">
+
+          <b>
+            🇧🇷 Selección brasileña
+          </b>
+
+          <span>
+            Catálogo enfocado en marcas y líneas de
+            cosmética brasileña.
+          </span>
+
+        </div>
+
+
+        <div class="trust-card">
+
+          <b>
+            📦 Envíos en Perú
+          </b>
+
+          <span>
+            La información de entrega se configurará
+            según tus zonas de atención.
+          </span>
+
+        </div>
+
+
+        <div class="trust-card">
+
+          <b>
+            💬 Atención personalizada
+          </b>
+
+          <span>
+            Podremos conectar el catálogo con WhatsApp
+            para cerrar cada pedido.
+          </span>
+
+        </div>
+
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- FOOTER -->
+
   <footer class="footer" id="contacto">
+
     <div class="footer-inner">
+
       <div>
-        <div class="logo-main">Brasil Perú</div>
-        <p>Tienda online de cosmética brasileña en Perú.</p>
+
+        <div class="logo-main">
+          Brasil Perú
+        </div>
+
+        <p>
+          Tienda online de cosmética brasileña en Perú.
+        </p>
+
       </div>
+
+
       <div>
-        <b>Categorías</b>
-        <p>Cabello<br>Rizos<br>Kids<br>Tratamientos</p>
+
+        <b>
+          Categorías
+        </b>
+
+        <p>
+          Cabello<br>
+          Rizos<br>
+          Kids<br>
+          Tratamientos
+        </p>
+
       </div>
+
+
       <div>
-        <b>Atención</b>
-        <p>Consulta precios y disponibilidad. Próximamente integraremos WhatsApp y pedidos.</p>
+
+        <b>
+          Atención
+        </b>
+
+        <p>
+          Consulta precios y disponibilidad.
+          Próximamente integraremos WhatsApp y pedidos.
+        </p>
+
       </div>
+
     </div>
+
   </footer>
 
+
+  <!-- CARRITO -->
+
   <div class="drawer" id="cartDrawer">
-    <div class="overlay" id="overlay"></div>
+
+    <div
+      class="overlay"
+      id="overlay"
+    ></div>
+
     <aside class="panel">
+
       <div class="panel-head">
-        <h2>Tu carrito</h2>
-        <button class="close" id="closeCart">×</button>
+
+        <h2>
+          Tu carrito
+        </h2>
+
+        <button
+          class="close"
+          id="closeCart"
+        >
+          ×
+        </button>
+
       </div>
-      <div class="cart-items" id="cartItems"></div>
+
+
+      <div
+        class="cart-items"
+        id="cartItems"
+      ></div>
+
+
       <div class="cart-foot">
-        <div class="total"><span>Total</span><span id="cartTotal">Consultar</span></div>
-        <p class="notice">Los precios aún están pendientes de definir. Cuando los tengas, actualizaremos el catálogo y activaremos el flujo de compra por WhatsApp.</p>
+
+        <div class="total">
+
+          <span>
+            Total
+          </span>
+
+          <span id="cartTotal">
+            Consultar
+          </span>
+
+        </div>
+
+        <p class="notice">
+          Los precios aún están pendientes de definir.
+          Cuando los tengas, actualizaremos el catálogo
+          y activaremos el flujo de compra por WhatsApp.
+        </p>
+
       </div>
+
     </aside>
+
   </div>
+
+
+  <!-- JAVASCRIPT -->
 
   <script src="products.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>
