@@ -6,7 +6,7 @@ const PRODUCTS = [
     size: "1 kg",
     category: "Kids",
     price: null,
-    image: "assets/61VI3f-pHNL_AC_UF1000,1000_QL80_.jpg",
+    image: "https://tiendaonlinebrasilperu.github.io/assets/cremaparap einar.jpg",
     badge: "DESTACADO"
   },
   {
@@ -16,7 +16,7 @@ const PRODUCTS = [
     size: "1 kg",
     category: "Rizos",
     price: null,
-    image: "assets/images.jpg",
+    image: "https://tiendaonlinebrasilperu.github.io/assets/superoleos.jpg",
     badge: "NOVEDAD"
   },
   {
@@ -26,7 +26,7 @@ const PRODUCTS = [
     size: "300 ml",
     category: "Kids",
     price: null,
-    image: "assets/Kids SOS Cachos Acondicionador.png",
+    image: "https://tiendaonlinebrasilperu.github.io/assets/Acondicionador.png",
     badge: "KIDS"
   },
   {
@@ -36,7 +36,7 @@ const PRODUCTS = [
     size: "300 ml",
     category: "Rizos",
     price: null,
-    image: "assets/unnamed_bf273e0c-0bfd-4c1c-bb10-b3677f05966f_512x512.webp",
+    image: "https://tiendaonlinebrasilperu.github.io/assets/activadordecachos.webp",
     badge: "TOP"
   },
   {
@@ -46,7 +46,7 @@ const PRODUCTS = [
     size: "500 g",
     category: "Tratamientos",
     price: null,
-    image: "assets/CACHOS.jpg",
+    image: "https://tiendaonlinebrasilperu.github.io/assets/oleodemanga.jpg",
     badge: "HIDRATACIÓN"
   }
 ];
