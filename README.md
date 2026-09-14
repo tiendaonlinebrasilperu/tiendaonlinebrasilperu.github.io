@@ -1,4 +1,4 @@
-# Brasil Perú Tienda Online — versión 2
+# Brasil Perú Tienda Online
 
 Nueva versión visual del catálogo para GitHub Pages.
 
