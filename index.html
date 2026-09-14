@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mar y Sol Essence | Cosmética brasileña en Perú</title>
+<meta name="description" content="Cosmética brasileña seleccionada para Perú. Compra productos para cabello, rizos, cuidado corporal y más.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="logo" href="#inicio">MAR Y SOL <span>ESSENCE</span></a>
+    <nav>
+      <a href="#tienda">Tienda</a><a href="#categorias">Categorías</a><a href="#marcas">Marcas</a><a href="#contacto">Contacto</a>
+    </nav>
+    <button class="cart-btn" onclick="openCart()">🛒 <span id="cartCount">0</span></button>
+  </div>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">🇧🇷 BELLEZA BRASILEÑA · 🇵🇪 PERÚ</p>
+      <h1>Tu ritual de belleza comienza aquí.</h1>
+      <p class="hero-copy">Descubre cosmética brasileña seleccionada para el cuidado del cabello, rizos, piel y cuerpo.</p>
+      <a class="btn primary" href="#tienda">Comprar ahora</a>
+      <a class="btn ghost" href="#categorias">Ver categorías</a>
+    </div>
+    <div class="hero-card">
+      <div class="flag">BRASIL → PERÚ</div>
+      <h2>Productos que inspiran tu rutina.</h2>
+      <p>Catálogo online · Pedidos por WhatsApp · Envíos en Perú</p>
+    </div>
+  </div>
+</section>
+
+<section id="categorias" class="section">
+  <div class="container">
+    <div class="section-head"><div><p class="eyebrow">EXPLORA</p><h2>Compra por categoría</h2></div></div>
+    <div class="category-grid">
+      <button onclick="filterCat('Cabello')">💆‍♀️<strong>Cabello</strong><span>Shampoo, mascarillas y más</span></button>
+      <button onclick="filterCat('Rizos')">🌀<strong>Rizos</strong><span>Definición e hidratación</span></button>
+      <button onclick="filterCat('Corporal')">✨<strong>Corporal</strong><span>Cuidado diario</span></button>
+      <button onclick="filterCat('Facial')">🌿<strong>Facial</strong><span>Limpieza e hidratación</span></button>
+    </div>
+  </div>
+</section>
+
+<section id="tienda" class="section light">
+  <div class="container">
+    <div class="section-head">
+      <div><p class="eyebrow">CATÁLOGO</p><h2>Nuestros productos</h2></div>
+      <div class="tools"><input id="search" placeholder="Buscar producto..." oninput="renderProducts()"><select id="cat" onchange="renderProducts()"><option value="">Todas las categorías</option><option>Cabello</option><option>Rizos</option><option>Corporal</option><option>Facial</option></select></div>
+    </div>
+    <div id="products" class="product-grid"></div>
+  </div>
+</section>
+
+<section id="marcas" class="section">
+  <div class="container">
+    <p class="eyebrow">MARCAS</p><h2>Marcas brasileñas</h2>
+    <div class="brands"><span>Salon Line</span><span>Skala</span><span>Novex</span><span>Lola Cosmetics</span><span>Bio Extratus</span></div>
+    <p class="note">Las marcas mostradas son ejemplos de catálogo. Sustituye o elimina las que realmente comercialices.</p>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="container trust-grid">
+    <div><b>🇧🇷 Selección brasileña</b><span>Productos elegidos para tu tienda.</span></div>
+    <div><b>🛍️ Compra sencilla</b><span>Agrega al carrito y envía tu pedido.</span></div>
+    <div><b>💬 Atención por WhatsApp</b><span>Confirmamos stock y entrega.</span></div>
+  </div>
+</section>
+
+<section id="contacto" class="section contact">
+  <div class="container contact-box">
+    <div><p class="eyebrow">¿TIENES DUDAS?</p><h2>Estamos para ayudarte.</h2><p>Escríbenos por WhatsApp para consultar disponibilidad, delivery o recomendaciones.</p></div>
+    <a id="waContact" class="btn primary" target="_blank">💬 Escribir por WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<footer><div class="container footer"><div><strong>MAR Y SOL ESSENCE</strong><p>Cosmética brasileña en Perú.</p></div><div>© <span id="year"></span> · Todos los derechos reservados.</div></div></footer>
+
+<div id="cartModal" class="modal hidden">
+  <div class="modal-box">
+    <div class="modal-head"><h2>Tu carrito</h2><button onclick="closeCart()">✕</button></div>
+    <div id="cartItems"></div>
+    <div class="cart-total"><span>Total</span><strong id="cartTotal">S/ 0.00</strong></div>
+    <div class="checkout-fields">
+      <input id="customerName" placeholder="Tu nombre">
+      <input id="customerDistrict" placeholder="Distrito / ciudad">
+      <textarea id="customerNote" placeholder="Dirección o indicaciones de entrega"></textarea>
+    </div>
+    <button class="btn primary full" onclick="sendOrder()">Enviar pedido por WhatsApp</button>
+    <p class="small">El pedido se enviará a nuestro WhatsApp para confirmar stock, pago y delivery.</p>
+  </div>
+</div>
+<div id="toast"></div>
+<script src="products.js"></script><script src="script.js"></script>
+</body>
+</html>
