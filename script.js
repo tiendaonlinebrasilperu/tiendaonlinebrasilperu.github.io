@@ -10,8 +10,15 @@ const cartCount = document.getElementById("cartCount");
 const cartTotal = document.getElementById("cartTotal");
 
 function money(value) {
-  return value == null ? "Consultar precio" : `S/ ${value.toFixed(2)}`;
+  return value == null
+    ? "Consultar precio"
+    : `S/ ${value.toFixed(2)}`;
 }
+
+
+/* =========================
+   MOSTRAR PRODUCTOS
+========================= */
 
 function renderProducts(list = PRODUCTS) {
   if (!grid) return;
@@ -19,27 +26,105 @@ function renderProducts(list = PRODUCTS) {
   grid.innerHTML = "";
 
   list.forEach(p => {
+
     const card = document.createElement("article");
     card.className = "product-card";
+
+    const benefitsHTML = p.benefits
+      ? `
+        <div class="product-section">
+          <h4>Beneficios</h4>
+          <ul>
+            ${p.benefits.map(item => `<li>${item}</li>`).join("")}
+          </ul>
+        </div>
+      `
+      : "";
+
+    const ingredientsHTML = p.ingredients
+      ? `
+        <div class="product-section">
+          <h4>Ingredientes destacados</h4>
+          <ul>
+            ${p.ingredients.map(item => `<li>${item}</li>`).join("")}
+          </ul>
+        </div>
+      `
+      : "";
+
+    const idealForHTML = p.idealFor
+      ? `
+        <div class="product-section">
+          <h4>Ideal para</h4>
+          <p>${p.idealFor}</p>
+        </div>
+      `
+      : "";
+
+    const featuresHTML = p.features
+      ? `
+        <div class="product-section">
+          <h4>Características</h4>
+          <ul>
+            ${p.features.map(item => `<li>${item}</li>`).join("")}
+          </ul>
+        </div>
+      `
+      : "";
 
     card.innerHTML = `
       <div class="product-image">
         <span class="badge">${p.badge || ""}</span>
-        <img src="${p.image}" alt="${p.brand} ${p.name}" loading="lazy">
+
+        <img
+          src="${p.image}"
+          alt="${p.brand} ${p.name}"
+          loading="lazy"
+        >
       </div>
 
       <div class="product-info">
+
         <div class="brand">${p.brand}</div>
+
         <h3>${p.name}</h3>
+
         <div class="size">${p.size}</div>
 
         <div class="price-row">
           <strong>${money(p.price)}</strong>
         </div>
 
-        <button class="product-btn" onclick="addToCart(${p.id})">
-          ${p.price == null ? "Consultar producto" : "Agregar al carrito"}
+        ${
+          p.description
+            ? `
+              <div class="product-description">
+                <h4>Descripción</h4>
+                <p>${p.description}</p>
+              </div>
+            `
+            : ""
+        }
+
+        ${benefitsHTML}
+
+        ${ingredientsHTML}
+
+        ${idealForHTML}
+
+        ${featuresHTML}
+
+        <button
+          class="product-btn"
+          onclick="addToCart(${p.id})"
+        >
+          ${
+            p.price == null
+              ? "Consultar producto"
+              : "Agregar al carrito"
+          }
         </button>
+
       </div>
     `;
 
@@ -47,16 +132,30 @@ function renderProducts(list = PRODUCTS) {
   });
 }
 
+
+/* =========================
+   AGREGAR AL CARRITO
+========================= */
+
 function addToCart(id) {
-  const product = PRODUCTS.find(p => p.id === id);
+
+  const product = PRODUCTS.find(
+    p => p.id === id
+  );
+
   if (!product) return;
 
-  const existing = cart.find(item => item.id === id);
+  const existing = cart.find(
+    item => item.id === id
+  );
 
   if (existing) {
     existing.qty += 1;
   } else {
-    cart.push({...product, qty: 1});
+    cart.push({
+      ...product,
+      qty: 1
+    });
   }
 
   renderCart();
@@ -66,173 +165,310 @@ function addToCart(id) {
   }
 }
 
+
+/* =========================
+   CAMBIAR CANTIDAD
+========================= */
+
 function changeQty(id, delta) {
-  const item = cart.find(p => p.id === id);
+
+  const item = cart.find(
+    p => p.id === id
+  );
+
   if (!item) return;
 
   item.qty += delta;
 
   if (item.qty <= 0) {
-    cart = cart.filter(p => p.id !== id);
+    cart = cart.filter(
+      p => p.id !== id
+    );
   }
 
   renderCart();
 }
 
-function renderCart() {
-  if (!cartItems || !cartCount || !cartTotal) return;
 
-  cartCount.textContent = cart.reduce(
-    (sum, p) => sum + p.qty,
-    0
-  );
+/* =========================
+   MOSTRAR CARRITO
+========================= */
+
+function renderCart() {
+
+  if (
+    !cartItems ||
+    !cartCount ||
+    !cartTotal
+  ) {
+    return;
+  }
+
+  cartCount.textContent =
+    cart.reduce(
+      (sum, p) => sum + p.qty,
+      0
+    );
 
   if (!cart.length) {
+
     cartItems.innerHTML = `
       <div class="empty-cart">
         Tu carrito está vacío.
       </div>
     `;
 
-    cartTotal.textContent = "Consultar";
+    cartTotal.textContent =
+      "Consultar";
+
     return;
   }
 
-  cartItems.innerHTML = cart.map(item => `
-    <div class="cart-item">
+  cartItems.innerHTML =
+    cart.map(item => `
 
-      <img src="${item.image}" alt="">
+      <div class="cart-item">
 
-      <div>
-        <b>${item.name}</b>
+        <img
+          src="${item.image}"
+          alt=""
+        >
 
-        <small>${item.size}</small>
+        <div>
 
-        <div class="qty">
-          <button onclick="changeQty(${item.id}, -1)">−</button>
+          <b>${item.name}</b>
 
-          <span>${item.qty}</span>
+          <small>${item.size}</small>
 
-          <button onclick="changeQty(${item.id}, 1)">+</button>
+          <div class="qty">
+
+            <button
+              onclick="changeQty(${item.id}, -1)"
+            >
+              −
+            </button>
+
+            <span>${item.qty}</span>
+
+            <button
+              onclick="changeQty(${item.id}, 1)"
+            >
+              +
+            </button>
+
+          </div>
+
         </div>
+
       </div>
 
-    </div>
-  `).join("");
+    `).join("");
 
-  const hasUnknownPrice = cart.some(
-    p => p.price == null
-  );
 
-  if (hasUnknownPrice) {
-    cartTotal.textContent = "Consultar precio";
-  } else {
-    const total = cart.reduce(
-      (sum, p) => sum + p.price * p.qty,
-      0
+  const hasUnknownPrice =
+    cart.some(
+      p => p.price == null
     );
 
-    cartTotal.textContent = money(total);
+
+  if (hasUnknownPrice) {
+
+    cartTotal.textContent =
+      "Consultar precio";
+
+  } else {
+
+    const total =
+      cart.reduce(
+        (sum, p) =>
+          sum + p.price * p.qty,
+        0
+      );
+
+    cartTotal.textContent =
+      money(total);
   }
 }
 
 
-/* CATEGORÍAS */
+/* =========================
+   CATEGORÍAS
+========================= */
 
-document.querySelectorAll(".category-chip").forEach(chip => {
+document
+  .querySelectorAll(".category-chip")
+  .forEach(chip => {
 
-  chip.addEventListener("click", () => {
+    chip.addEventListener(
+      "click",
+      () => {
 
-    document
-      .querySelectorAll(".category-chip")
-      .forEach(c => c.classList.remove("active"));
+        document
+          .querySelectorAll(".category-chip")
+          .forEach(c =>
+            c.classList.remove("active")
+          );
 
-    chip.classList.add("active");
+        chip.classList.add("active");
 
-    const cat = chip.dataset.category;
+        const cat =
+          chip.dataset.category;
 
-    if (cat === "Todos") {
-      renderProducts(PRODUCTS);
-    } else {
-      renderProducts(
-        PRODUCTS.filter(p => p.category === cat)
-      );
-    }
+        if (cat === "Todos") {
 
-  });
+          renderProducts(PRODUCTS);
 
-});
+        } else {
 
+          renderProducts(
+            PRODUCTS.filter(
+              p => p.category === cat
+            )
+          );
 
-/* BUSCADOR */
+        }
 
-if (search) {
-
-  search.addEventListener("input", e => {
-
-    const q = e.target.value
-      .toLowerCase()
-      .trim();
-
-    renderProducts(
-      PRODUCTS.filter(p =>
-        `${p.brand} ${p.name} ${p.category}`
-          .toLowerCase()
-          .includes(q)
-      )
+      }
     );
 
   });
 
+
+/* =========================
+   BUSCADOR
+========================= */
+
+if (search) {
+
+  search.addEventListener(
+    "input",
+    e => {
+
+      const q =
+        e.target.value
+          .toLowerCase()
+          .trim();
+
+      renderProducts(
+
+        PRODUCTS.filter(p =>
+
+          `${p.brand}
+           ${p.name}
+           ${p.category}
+           ${p.description || ""}
+           ${(p.benefits || []).join(" ")}
+           ${(p.ingredients || []).join(" ")}`
+            .toLowerCase()
+            .includes(q)
+
+        )
+
+      );
+
+    }
+  );
+
 }
 
 
-/* CARRITO */
+/* =========================
+   ABRIR CARRITO
+========================= */
 
 if (cartButton) {
+
   cartButton.addEventListener(
     "click",
-    () => cartDrawer.classList.add("open")
+    () => {
+
+      if (cartDrawer) {
+        cartDrawer.classList.add(
+          "open"
+        );
+      }
+
+    }
   );
+
 }
+
+
+/* =========================
+   CERRAR CARRITO
+========================= */
 
 if (closeCart) {
+
   closeCart.addEventListener(
     "click",
-    () => cartDrawer.classList.remove("open")
+    () => {
+
+      if (cartDrawer) {
+        cartDrawer.classList.remove(
+          "open"
+        );
+      }
+
+    }
   );
+
 }
 
-const overlay = document.getElementById("overlay");
+
+/* =========================
+   OVERLAY
+========================= */
+
+const overlay =
+  document.getElementById("overlay");
 
 if (overlay) {
+
   overlay.addEventListener(
     "click",
-    () => cartDrawer.classList.remove("open")
+    () => {
+
+      if (cartDrawer) {
+        cartDrawer.classList.remove(
+          "open"
+        );
+      }
+
+    }
   );
+
 }
 
 
-/* BOTÓN CONSULTAR */
+/* =========================
+   BOTÓN CONSULTAR
+========================= */
 
 const consultButton =
-  document.getElementById("consultButton");
+  document.getElementById(
+    "consultButton"
+  );
 
 if (consultButton) {
 
   consultButton.addEventListener(
     "click",
     () => {
+
       alert(
         "Los precios y el stock se mostrarán aquí próximamente. También podremos conectar WhatsApp cuando confirmes tu número."
       );
+
     }
   );
 
 }
 
 
-/* MOSTRAR PRODUCTOS */
+/* =========================
+   INICIAR TIENDA
+========================= */
 
 renderProducts();
 renderCart();
