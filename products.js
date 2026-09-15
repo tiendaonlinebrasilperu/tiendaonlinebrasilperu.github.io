@@ -26,82 +26,6 @@ const PRODUCTS = [
     badge: "KIDS"
   },
 
-
-  // =====================================================
-  // SKALA
-  // =====================================================
-
-  {
-    id: 6,
-    brand: "Skala Brasil",
-    name: "Potão do Amor – Creme de Tratamento + Creme de Pentear 2 em 1",
-    size: "1 kg",
-    category: "Cabello",
-    price: 35.00,
-    image: "assets/potaoamor.jpg",
-    badge: "NOVEDAD"
-  },
-
-  {
-    id: 7,
-    brand: "Skala Brasil",
-    name: "Skala 12 em 1 – Restauração & Brilho",
-    size: "1000 g",
-    category: "Tratamientos",
-    price: 35.00,
-    image: "assets/cremaparapeinar1.jpg",
-    badge: "NOVEDAD"
-  },
-
-  {
-    id: 8,
-    brand: "Skala Brasil",
-    name: "Skala Expert Bomba de Vitaminas",
-    size: "1000 g",
-    category: "Cabello",
-    price: 35.00,
-    image: "assets/skalaexpert.jpg",
-    badge: "NOVEDAD"
-  },
-
-  {
-    id: 9,
-    brand: "Skala Brasil",
-    name: "Skala Expert Divino Potão 2 em 1",
-    size: "1000 g",
-    category: "Rizos",
-    price: 35.00,
-    image: "assets/skalaexpertdivinopotao.jpg",
-    badge: "NOVEDAD"
-  },
-
-  {
-    id: 10,
-    brand: "Skala Brasil",
-    name: "Skala Frutástica Uva – Brilho Extremo",
-    size: "1000 g",
-    category: "Cabello",
-    price: 35.00,
-    image: "assets/skalafrutastica.jpg",
-    badge: "NOVEDAD"
-  },
-
-  {
-    id: 11,
-    brand: "Skala Brasil",
-    name: "Skala Frutástica Morango – Nutrição e Brilho",
-    size: "1000 g",
-    category: "Cabello",
-    price: 35.00,
-    image: "assets/skalafrutasticamorango.jpg",
-    badge: "NOVEDAD"
-  },
-
-
-  // =====================================================
-  // NUEVOS PRODUCTOS
-  // =====================================================
-
   {
     id: 12,
     brand: "Salon Line",
@@ -245,6 +169,82 @@ const PRODUCTS = [
     badge: "KIDS"
   },
 
+
+  // =====================================================
+  // SKALA BRASIL
+  // =====================================================
+
+  {
+    id: 6,
+    brand: "Skala Brasil",
+    name: "Potão do Amor – Creme de Tratamento + Creme de Pentear 2 em 1",
+    size: "1 kg",
+    category: "Cabello",
+    price: 35.00,
+    image: "assets/potaoamor.jpg",
+    badge: "NOVEDAD"
+  },
+
+  {
+    id: 7,
+    brand: "Skala Brasil",
+    name: "Skala 12 em 1 – Restauração & Brilho",
+    size: "1000 g",
+    category: "Tratamientos",
+    price: 35.00,
+    image: "assets/cremaparapeinar1.jpg",
+    badge: "NOVEDAD"
+  },
+
+  {
+    id: 8,
+    brand: "Skala Brasil",
+    name: "Skala Expert Bomba de Vitaminas",
+    size: "1000 g",
+    category: "Cabello",
+    price: 35.00,
+    image: "assets/skalaexpert.jpg",
+    badge: "NOVEDAD"
+  },
+
+  {
+    id: 9,
+    brand: "Skala Brasil",
+    name: "Skala Expert Divino Potão 2 em 1",
+    size: "1000 g",
+    category: "Rizos",
+    price: 35.00,
+    image: "assets/skalaexpertdivinopotao.jpg",
+    badge: "NOVEDAD"
+  },
+
+  {
+    id: 10,
+    brand: "Skala Brasil",
+    name: "Skala Frutástica Uva – Brilho Extremo",
+    size: "1000 g",
+    category: "Cabello",
+    price: 35.00,
+    image: "assets/skalafrutastica.jpg",
+    badge: "NOVEDAD"
+  },
+
+  {
+    id: 11,
+    brand: "Skala Brasil",
+    name: "Skala Frutástica Morango – Nutrição e Brilho",
+    size: "1000 g",
+    category: "Cabello",
+    price: 35.00,
+    image: "assets/skalafrutasticamorango.jpg",
+    badge: "NOVEDAD"
+  },
+
+
+  // =====================================================
+  // OX
+  // =====================================================
+
   {
     id: 25,
     brand: "OX",
@@ -288,6 +288,11 @@ const PRODUCTS = [
     image: "assets/Imagen18.jpg",
     badge: "OFERTA"
   },
+
+
+  // =====================================================
+  // APINIL / APIDERM
+  // =====================================================
 
   {
     id: 29,
