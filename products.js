@@ -1,5 +1,4 @@
 const PRODUCTS = [
-
   {
     id: 1,
     brand: "Salon Line",
@@ -9,17 +8,6 @@ const PRODUCTS = [
     price: null,
     image: "https://tiendaonlinebrasilperu.github.io/assets/soscachos.jpg",
     badge: "DESTACADO"
-  },
-
-  {
-    id: 2,
-    brand: "Salon Line",
-    name: "S.O.S Cachos Super Óleos – Ativador de Cachos",
-    size: "1 kg",
-    category: "Rizos",
-    price: null,
-    image: "https://tiendaonlinebrasilperu.github.io/assets/superoleos.jpg",
-    badge: "NOVEDAD"
   },
 
   {
@@ -34,28 +22,6 @@ const PRODUCTS = [
   },
 
   {
-    id: 4,
-    brand: "Salon Line",
-    name: "S.O.S Cachos – Ativador de Cachos 10 em 1",
-    size: "300 ml",
-    category: "Rizos",
-    price: null,
-    image: "https://tiendaonlinebrasilperu.github.io/assets/activadordecachos.webp",
-    badge: "TOP"
-  },
-
-  {
-    id: 5,
-    brand: "Salon Line",
-    name: "S.O.S Cachos Óleo de Manga – Ativador de Cachos",
-    size: "500 g",
-    category: "Tratamientos",
-    price: null,
-    image: "https://tiendaonlinebrasilperu.github.io/assets/oleodemanga.jpg",
-    badge: "HIDRATACIÓN"
-  },
-
-  {
     id: 6,
     brand: "Skala Brasil",
     name: "Potão do Amor – Creme de Tratamento + Creme de Pentear 2 em 1",
@@ -63,64 +29,86 @@ const PRODUCTS = [
     category: "Cabello",
     price: 28.00,
     image: "https://tiendaonlinebrasilperu.github.io/assets/potaoamor.jpg",
-    badge: "NOVEDAD"
+    badge: "NOVEDAD",
+    description: "¡Dale a tu cabello el amor que se merece con Potão do Amor! Este bote de 1 kilo es ideal para cabellos dañados o resecos. Su fórmula 2 en 1, que combina crema de tratamiento y crema de peinar, ofrece un cuidado práctico y completo para tu cabello.",
+    benefits: [
+      "Hidratación y nutrición",
+      "Ayuda a fortalecer la fibra capilar",
+      "Ayuda a combatir la resequedad",
+      "Ayuda a controlar el frizz",
+      "Deja el cabello suave y brillante",
+      "Fórmula 2 en 1"
+    ],
+    ingredients: [
+      "Óleo de Rícino",
+      "Óleo de Argán",
+      "Queratina Vegetal"
+    ],
+    idealFor: "Cabellos dañados, secos, resecos o con frizz.",
+    features: [
+      "100% vegano",
+      "Libre de sulfatos",
+      "Libre de parabenos",
+      "Libre de siliconas",
+      "Libre de petrolatos",
+      "Libre de aceites minerales"
+    ]
   },
 
   {
     id: 7,
-    brand: "Skala",
+    brand: "Skala Brasil",
     name: "Skala 12 em 1 – Restauração & Brilho",
     size: "1000 g",
     category: "Tratamientos",
     price: 28.00,
     image: "https://tiendaonlinebrasilperu.github.io/assets/cremaparapeinar1.jpg",
-    badge: "12 EM 1"
+    badge: "NOVEDAD"
   },
 
   {
     id: 8,
-    brand: "Skala Expert",
+    brand: "Skala Brasil",
     name: "Skala Expert Bomba de Vitaminas",
     size: "1000 g",
     category: "Cabello",
     price: 28.00,
     image: "https://tiendaonlinebrasilperu.github.io/assets/skalaexpert.jpg",
-    badge: "BOMBA DE VITAMINAS"
+    badge: "NOVEDAD"
   },
 
   {
     id: 9,
-    brand: "Skala Expert",
+    brand: "Skala Brasil",
     name: "Skala Expert Divino Potão 2 em 1",
     size: "1000 g",
     category: "Rizos",
     price: 28.00,
     image: "https://tiendaonlinebrasilperu.github.io/assets/skalaexpertdivinopotao.jpg",
-    badge: "2 EM 1"
+    badge: "NOVEDAD"
   },
 
   {
     id: 10,
-    brand: "Skala Frutástica",
+    brand: "Skala Brasil",
     name: "Skala Frutástica Uva – Brilho Extremo",
     size: "1000 g",
     category: "Cabello",
     price: 28.00,
     image: "https://tiendaonlinebrasilperu.github.io/assets/skalafrutastica.jpg",
-    badge: "UVA"
+    badge: "NOVEDAD"
   },
 
   {
     id: 11,
-    brand: "Skala Frutástica",
+    brand: "Skala Brasil",
     name: "Skala Frutástica Morango – Nutrição e Brilho",
     size: "1000 g",
     category: "Cabello",
     price: 28.00,
     image: "https://tiendaonlinebrasilperu.github.io/assets/skalafrutasticamorango.jpg",
-    badge: "MORANGO"
+    badge: "NOVEDAD"
   }
-
 ];
 
 const WHATSAPP_NUMBER = "";
