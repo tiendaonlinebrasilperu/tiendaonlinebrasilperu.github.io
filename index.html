@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+
   <meta charset="utf-8">
 
   <meta
@@ -9,7 +10,9 @@
     content="width=device-width, initial-scale=1"
   >
 
-  <title>BRASILÉA | Cosmética y belleza brasileña</title>
+  <title>
+    BRASILÉA | Cosmética y belleza brasileña
+  </title>
 
   <meta
     name="description"
@@ -23,19 +26,68 @@
 
   <link
     rel="stylesheet"
-    href="style.css?v=5"
+    href="style.css?v=6"
   >
+
+  <style>
+
+    /* =====================================================
+       LOGO BRASILÉA
+    ====================================================== */
+
+    .logo-image {
+      display: block;
+      width: 245px;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .logo-main {
+      display: flex;
+      align-items: center;
+    }
+
+    @media (max-width: 900px) {
+
+      .logo-image {
+        width: 200px;
+      }
+
+    }
+
+    @media (max-width: 600px) {
+
+      .logo-image {
+        width: 170px;
+      }
+
+    }
+
+  </style>
+
 </head>
 
+
 <body>
+
 
   <!-- =====================================================
        BARRA SUPERIOR
   ====================================================== -->
 
   <div class="topbar">
+
     COSMÉTICA BRASILEÑA · PERÚ · BELLEZA Y CUIDADO PERSONAL
+
   </div>
+
 
 
   <!-- =====================================================
@@ -44,7 +96,11 @@
 
   <header class="header">
 
+
     <div class="header-main">
+
+
+      <!-- LOGO -->
 
       <a
         class="logo"
@@ -53,14 +109,17 @@
       >
 
         <div class="logo-main">
-          BRASILÉA
-        </div>
 
-        <div class="logo-sub">
-          Cosmética brasileña
+          <img
+            src="assets/logo-brasilea.png"
+            alt="BRASILÉA - Cosmética brasileña"
+            class="logo-image"
+          >
+
         </div>
 
       </a>
+
 
 
       <!-- BUSCADOR -->
@@ -81,17 +140,22 @@
       </div>
 
 
+
       <!-- ACCIONES -->
 
       <div class="header-actions">
+
 
         <button
           class="icon-btn"
           id="consultButton"
           type="button"
         >
+
           💬 Consultar
+
         </button>
+
 
 
         <button
@@ -111,9 +175,12 @@
 
         </button>
 
+
       </div>
 
+
     </div>
+
 
 
     <!-- ===================================================
@@ -125,49 +192,63 @@
       aria-label="Navegación principal"
     >
 
+
       <a href="#productos">
         Tienda
       </a>
+
 
       <a href="#categorias">
         Cabello
       </a>
 
+
       <a href="#categorias">
         Rizos
       </a>
+
 
       <a href="#categorias">
         Rostro
       </a>
 
+
       <a href="#categorias">
         Cuerpo
       </a>
+
 
       <a href="#categorias">
         Maquillaje
       </a>
 
+
       <a href="#categorias">
         Perfumería
       </a>
+
 
       <a href="#categorias">
         Kids
       </a>
 
+
       <a href="#categorias">
         Ofertas
       </a>
+
 
       <a href="#marcas">
         Marcas
       </a>
 
+
     </nav>
 
+
   </header>
+
+
 
 
   <!-- =====================================================
@@ -177,80 +258,115 @@
   <main>
 
 
+
     <!-- ===================================================
          HERO
     ==================================================== -->
 
     <section class="hero">
 
+
       <div class="hero-inner">
+
 
         <div>
 
+
           <div class="eyebrow">
+
             🇧🇷 BELLEZA BRASILEÑA EN PERÚ
+
           </div>
 
 
+
           <h1>
+
             Tu belleza.
             <br>
             Tu esencia.
             <br>
             Tu Brasil.
+
           </h1>
 
 
+
           <p>
+
             Descubre cosmética brasileña seleccionada
             para tu rutina de belleza y cuidado personal:
             cabello, rostro, cuerpo, maquillaje,
             perfumería y mucho más.
+
           </p>
 
 
+
           <div class="hero-actions">
+
 
             <a
               class="primary"
               href="#productos"
             >
+
               VER PRODUCTOS
+
             </a>
+
+
 
             <a
               class="secondary"
               href="#categorias"
             >
+
               EXPLORAR CATEGORÍAS
+
             </a>
 
+
           </div>
+
 
         </div>
 
 
+
+
         <div class="hero-art">
 
+
           <div class="hero-card">
+
 
             <img
               src="assets/oleodemanga.jpg"
               alt="Cosmética brasileña Salon Line S.O.S Cachos"
             >
 
+
           </div>
+
 
 
           <div class="hero-label">
+
             COSMÉTICA BRASILEÑA · PERÚ
+
           </div>
+
 
         </div>
 
+
       </div>
 
+
     </section>
+
+
 
 
     <!-- ===================================================
@@ -262,38 +378,57 @@
       id="categorias"
     >
 
+
       <div class="section-head">
+
 
         <div>
 
+
           <div class="kicker">
+
             Explora
+
           </div>
 
+
           <h2>
+
             Compra por categoría
+
           </h2>
+
 
         </div>
 
 
+
         <p class="section-intro">
+
           Encuentra productos según tu rutina
           de belleza y cuidado personal.
+
         </p>
+
 
       </div>
 
 
+
+
       <div class="categories">
+
 
         <button
           class="category-chip active"
           data-category="Todos"
           type="button"
         >
+
           Todos
+
         </button>
+
 
 
         <button
@@ -301,8 +436,11 @@
           data-category="Cabello"
           type="button"
         >
+
           Cabello
+
         </button>
+
 
 
         <button
@@ -310,8 +448,11 @@
           data-category="Rizos"
           type="button"
         >
+
           Rizos
+
         </button>
+
 
 
         <button
@@ -319,8 +460,11 @@
           data-category="Rostro"
           type="button"
         >
+
           Rostro
+
         </button>
+
 
 
         <button
@@ -328,8 +472,11 @@
           data-category="Cuerpo"
           type="button"
         >
+
           Cuerpo
+
         </button>
+
 
 
         <button
@@ -337,8 +484,11 @@
           data-category="Maquillaje"
           type="button"
         >
+
           Maquillaje
+
         </button>
+
 
 
         <button
@@ -346,8 +496,11 @@
           data-category="Perfumería"
           type="button"
         >
+
           Perfumería
+
         </button>
+
 
 
         <button
@@ -355,8 +508,11 @@
           data-category="Cuidado Personal"
           type="button"
         >
+
           Cuidado Personal
+
         </button>
+
 
 
         <button
@@ -364,8 +520,11 @@
           data-category="Kids"
           type="button"
         >
+
           Kids
+
         </button>
+
 
 
         <button
@@ -373,8 +532,11 @@
           data-category="Tratamientos"
           type="button"
         >
+
           Tratamientos
+
         </button>
+
 
 
         <button
@@ -382,12 +544,18 @@
           data-category="Ofertas"
           type="button"
         >
+
           Ofertas
+
         </button>
+
 
       </div>
 
+
     </section>
+
+
 
 
     <!-- ===================================================
@@ -399,27 +567,42 @@
       id="productos"
     >
 
+
       <div class="section-head">
+
 
         <div>
 
+
           <div class="kicker">
+
             BRASILÉA
+
           </div>
 
+
           <h2>
+
             Productos destacados
+
           </h2>
+
 
         </div>
 
 
+
         <p class="section-intro">
+
           Cosmética brasileña seleccionada
           para tu rutina de belleza.
+
         </p>
 
+
       </div>
+
+
 
 
       <div
@@ -427,7 +610,10 @@
         id="productGrid"
       ></div>
 
+
     </section>
+
+
 
 
     <!-- ===================================================
@@ -439,54 +625,92 @@
       id="marcas"
     >
 
+
       <div class="section-head">
+
 
         <div>
 
+
           <div class="kicker">
+
             Marcas
+
           </div>
 
+
           <h2>
+
             Belleza brasileña
+
           </h2>
+
 
         </div>
 
 
+
         <p class="section-intro">
+
           Trabajaremos con marcas reconocidas
           de cosmética brasileña.
+
         </p>
 
+
       </div>
+
+
 
 
       <div class="brand-list">
 
+
         <div class="brand-pill">
+
           Salon Line
+
         </div>
 
+
+
         <div class="brand-pill">
+
           Skala
+
         </div>
 
+
+
         <div class="brand-pill">
+
           Novex
+
         </div>
 
+
+
         <div class="brand-pill">
+
           Lola Cosmetics
+
         </div>
 
+
+
         <div class="brand-pill">
+
           Bio Extratus
+
         </div>
+
 
       </div>
 
+
     </section>
+
+
 
 
     <!-- ===================================================
@@ -498,85 +722,134 @@
       id="destacados"
     >
 
+
       <div class="section-head">
+
 
         <div>
 
+
           <div class="kicker">
+
             BRASILÉA
+
           </div>
 
+
           <h2>
+
             Belleza que cruza fronteras
+
           </h2>
+
 
         </div>
 
+
       </div>
+
+
 
 
       <div class="trust">
 
+
         <div class="trust-card">
 
+
           <b>
+
             🇧🇷 Cosmética brasileña
+
           </b>
 
+
           <span>
+
             Selección de productos y marcas
             provenientes de Brasil.
+
           </span>
+
 
         </div>
 
 
+
         <div class="trust-card">
 
+
           <b>
+
             📦 Envíos en Perú
+
           </b>
 
+
           <span>
+
             Prepararemos opciones de entrega
             para Lima y provincias.
+
           </span>
+
 
         </div>
 
 
+
         <div class="trust-card">
 
+
           <b>
+
             💬 Atención personalizada
+
           </b>
 
+
           <span>
+
             Te ayudaremos a encontrar los productos
             adecuados para tu rutina.
+
           </span>
 
+
         </div>
+
 
 
         <div class="trust-card">
 
+
           <b>
+
             ✨ Belleza integral
+
           </b>
 
+
           <span>
+
             Cabello, rostro, cuerpo, maquillaje,
             perfumería y cuidado personal.
+
           </span>
 
+
         </div>
+
 
       </div>
 
+
     </section>
 
+
   </main>
+
+
 
 
   <!-- =====================================================
@@ -588,29 +861,49 @@
     id="contacto"
   >
 
+
     <div class="footer-inner">
+
 
       <div>
 
+
         <div class="logo-main">
-          BRASILÉA
+
+          <img
+            src="assets/logo-brasilea.png"
+            alt="BRASILÉA - Cosmética brasileña"
+            class="logo-image"
+          >
+
         </div>
 
+
         <p>
+
           Cosmética y belleza brasileña
           para el mercado peruano.
+
         </p>
+
 
       </div>
 
 
+
+
       <div>
 
+
         <b>
+
           Categorías
+
         </b>
 
+
         <p>
+
           Cabello<br>
           Rizos<br>
           Rostro<br>
@@ -621,27 +914,42 @@
           Kids<br>
           Tratamientos<br>
           Ofertas
+
         </p>
 
+
       </div>
+
+
 
 
       <div>
 
+
         <b>
+
           Atención
+
         </b>
 
+
         <p>
+
           Consulta precios,
           disponibilidad y productos.
+
         </p>
+
 
       </div>
 
+
     </div>
 
+
   </footer>
+
+
 
 
   <!-- =====================================================
@@ -653,10 +961,12 @@
     id="cartDrawer"
   >
 
+
     <div
       class="overlay"
       id="overlay"
     ></div>
+
 
 
     <aside
@@ -664,11 +974,16 @@
       aria-label="Carrito de compras"
     >
 
+
       <div class="panel-head">
 
+
         <h2>
+
           Tu carrito
+
         </h2>
+
 
 
         <button
@@ -677,10 +992,15 @@
           type="button"
           aria-label="Cerrar carrito"
         >
+
           ×
+
         </button>
 
+
       </div>
+
+
 
 
       <div
@@ -689,40 +1009,59 @@
       ></div>
 
 
+
+
       <div class="cart-foot">
+
 
         <div class="total">
 
+
           <span>
+
             Total
+
           </span>
 
+
           <span id="cartTotal">
+
             Consultar
+
           </span>
+
 
         </div>
 
 
+
         <p class="notice">
+
           Los precios y la disponibilidad
           se irán incorporando al catálogo.
+
         </p>
+
 
       </div>
 
+
     </aside>
 
+
   </div>
+
+
 
 
   <!-- =====================================================
        JAVASCRIPT
   ====================================================== -->
 
-  <script src="products.js?v=5"></script>
+  <script src="products.js?v=6"></script>
 
-  <script src="script.js?v=5"></script>
+  <script src="script.js?v=6"></script>
+
 
 </body>
 
