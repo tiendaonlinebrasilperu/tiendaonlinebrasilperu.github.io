@@ -1,4 +1,9 @@
 const PRODUCTS = [
+
+  // =====================================================
+  // SALON LINE
+  // =====================================================
+
   {
     id: 1,
     brand: "Salon Line",
@@ -6,7 +11,7 @@ const PRODUCTS = [
     size: "1 kg",
     category: "Kids",
     price: null,
-    image: "https://tiendaonlinebrasilperu.github.io/assets/soscachos.jpg",
+    image: "assets/soscachos.jpg",
     badge: "DESTACADO"
   },
 
@@ -17,9 +22,14 @@ const PRODUCTS = [
     size: "300 ml",
     category: "Kids",
     price: null,
-    image: "https://tiendaonlinebrasilperu.github.io/assets/Acondicionador.png",
+    image: "assets/Acondicionador.png",
     badge: "KIDS"
   },
+
+
+  // =====================================================
+  // SKALA
+  // =====================================================
 
   {
     id: 6,
@@ -28,31 +38,8 @@ const PRODUCTS = [
     size: "1 kg",
     category: "Cabello",
     price: 35.00,
-    image: "https://tiendaonlinebrasilperu.github.io/assets/potaoamor.jpg",
-    badge: "NOVEDAD",
-    description: "¡Dale a tu cabello el amor que se merece con Potão do Amor! Este bote de 1 kilo es ideal para cabellos dañados o resecos. Su fórmula 2 en 1, que combina crema de tratamiento y crema de peinar, ofrece un cuidado práctico y completo para tu cabello.",
-    benefits: [
-      "Hidratación y nutrición",
-      "Ayuda a fortalecer la fibra capilar",
-      "Ayuda a combatir la resequedad",
-      "Ayuda a controlar el frizz",
-      "Deja el cabello suave y brillante",
-      "Fórmula 2 en 1"
-    ],
-    ingredients: [
-      "Óleo de Rícino",
-      "Óleo de Argán",
-      "Queratina Vegetal"
-    ],
-    idealFor: "Cabellos dañados, secos, resecos o con frizz.",
-    features: [
-      "100% vegano",
-      "Libre de sulfatos",
-      "Libre de parabenos",
-      "Libre de siliconas",
-      "Libre de petrolatos",
-      "Libre de aceites minerales"
-    ]
+    image: "assets/potaoamor.jpg",
+    badge: "NOVEDAD"
   },
 
   {
@@ -62,7 +49,7 @@ const PRODUCTS = [
     size: "1000 g",
     category: "Tratamientos",
     price: 35.00,
-    image: "https://tiendaonlinebrasilperu.github.io/assets/cremaparapeinar1.jpg",
+    image: "assets/cremaparapeinar1.jpg",
     badge: "NOVEDAD"
   },
 
@@ -73,7 +60,7 @@ const PRODUCTS = [
     size: "1000 g",
     category: "Cabello",
     price: 35.00,
-    image: "https://tiendaonlinebrasilperu.github.io/assets/skalaexpert.jpg",
+    image: "assets/skalaexpert.jpg",
     badge: "NOVEDAD"
   },
 
@@ -84,7 +71,7 @@ const PRODUCTS = [
     size: "1000 g",
     category: "Rizos",
     price: 35.00,
-    image: "https://tiendaonlinebrasilperu.github.io/assets/skalaexpertdivinopotao.jpg",
+    image: "assets/skalaexpertdivinopotao.jpg",
     badge: "NOVEDAD"
   },
 
@@ -95,7 +82,7 @@ const PRODUCTS = [
     size: "1000 g",
     category: "Cabello",
     price: 35.00,
-    image: "https://tiendaonlinebrasilperu.github.io/assets/skalafrutastica.jpg",
+    image: "assets/skalafrutastica.jpg",
     badge: "NOVEDAD"
   },
 
@@ -106,9 +93,229 @@ const PRODUCTS = [
     size: "1000 g",
     category: "Cabello",
     price: 35.00,
-    image: "https://tiendaonlinebrasilperu.github.io/assets/skalafrutasticamorango.jpg",
+    image: "assets/skalafrutasticamorango.jpg",
+    badge: "NOVEDAD"
+  },
+
+
+  // =====================================================
+  // NUEVOS PRODUCTOS
+  // =====================================================
+
+  {
+    id: 12,
+    brand: "Salon Line",
+    name: "Creme para Pentear Definição Natural",
+    size: "1 kg",
+    category: "Rizos",
+    price: null,
+    image: "assets/Imagen1.jpg",
+    badge: "NOVEDAD"
+  },
+
+  {
+    id: 13,
+    brand: "Salon Line",
+    name: "Creme para Pentear Definição Cachos Ostentação",
+    size: "1 kg",
+    category: "Rizos",
+    price: null,
+    image: "assets/Imagen2.jpg",
+    badge: "NOVEDAD"
+  },
+
+  {
+    id: 14,
+    brand: "Salon Line",
+    name: "Creme para Pentear Definição Duradoura – Cachos dos Sonhos",
+    size: "1 kg",
+    category: "Rizos",
+    price: null,
+    image: "assets/Imagen4.jpg",
+    badge: "NOVEDAD"
+  },
+
+  {
+    id: 15,
+    brand: "Salon Line",
+    name: "Creme para Pentear Mistura Pronta Super Óleos",
+    size: "1 kg",
+    category: "Rizos",
+    price: null,
+    image: "assets/Imagen5.jpg",
+    badge: "NOVEDAD"
+  },
+
+  {
+    id: 16,
+    brand: "Salon Line",
+    name: "Meu Liso Restauração Intensa – Kit Reconstrutor",
+    size: "Shampoo 300 ml + Acondicionador 200 ml",
+    category: "Cabello",
+    price: null,
+    image: "assets/Imagen6.jpg",
+    badge: "OFERTA"
+  },
+
+  {
+    id: 17,
+    brand: "Salon Line",
+    name: "Meu Liso Demais – Kit Alinhador",
+    size: "Shampoo 300 ml + Acondicionador 200 ml",
+    category: "Cabello",
+    price: null,
+    image: "assets/Imagen7.jpg",
+    badge: "OFERTA"
+  },
+
+  {
+    id: 18,
+    brand: "Salon Line",
+    name: "Meu Liso Escudo Antiporosidade – Kit Equilíbrio do pH",
+    size: "Shampoo 300 ml + Acondicionador 200 ml",
+    category: "Cabello",
+    price: null,
+    image: "assets/Imagen8.jpg",
+    badge: "OFERTA"
+  },
+
+  {
+    id: 19,
+    brand: "Salon Line",
+    name: "Meu Liso Reparação Pós-Química – Acondicionador Reparador",
+    size: "300 ml",
+    category: "Cabello",
+    price: null,
+    image: "assets/Imagen9.jpg",
+    badge: "OFERTA"
+  },
+
+  {
+    id: 20,
+    brand: "Salon Line",
+    name: "S.O.S Cachos Kids Hidratação – Máscara de Hidratação Intensa",
+    size: "500 g",
+    category: "Kids",
+    price: null,
+    image: "assets/Imagen10.jpg",
+    badge: "KIDS"
+  },
+
+  {
+    id: 21,
+    brand: "Salon Line",
+    name: "S.O.S Cachos Kids – Creme para Pentear Definição Extraordinária",
+    size: "300 ml",
+    category: "Kids",
+    price: null,
+    image: "assets/Imagen11.jpg",
+    badge: "KIDS"
+  },
+
+  {
+    id: 22,
+    brand: "Salon Line",
+    name: "Meu Liso Kids – Acondicionador Desembaraçante",
+    size: "300 ml",
+    category: "Kids",
+    price: null,
+    image: "assets/Imagen12.jpg",
+    badge: "KIDS"
+  },
+
+  {
+    id: 23,
+    brand: "Salon Line",
+    name: "Meu Liso Kids – Creme para Pentear Desembaraçante",
+    size: "250 ml",
+    category: "Kids",
+    price: null,
+    image: "assets/Imagen13.jpg",
+    badge: "KIDS"
+  },
+
+  {
+    id: 24,
+    brand: "Salon Line",
+    name: "Meu Liso Kids – Shampoo Suave",
+    size: "300 ml",
+    category: "Kids",
+    price: null,
+    image: "assets/Imagen14.jpg",
+    badge: "KIDS"
+  },
+
+  {
+    id: 25,
+    brand: "OX",
+    name: "OX Colágeno – Kit Shampoo + Acondicionador",
+    size: "Shampoo 200 ml + Acondicionador 170 ml",
+    category: "Cabello",
+    price: null,
+    image: "assets/Imagen15.png",
+    badge: "OFERTA"
+  },
+
+  {
+    id: 26,
+    brand: "OX",
+    name: "OX Hialurónico – Kit Shampoo + Acondicionador",
+    size: "Shampoo 200 ml + Acondicionador 170 ml",
+    category: "Cabello",
+    price: null,
+    image: "assets/Imagen16.jpg",
+    badge: "OFERTA"
+  },
+
+  {
+    id: 27,
+    brand: "OX",
+    name: "OX Hidrata – Kit Shampoo + Acondicionador",
+    size: "Shampoo 375 ml + Acondicionador 170 ml",
+    category: "Cabello",
+    price: null,
+    image: "assets/Imagen17.jpg",
+    badge: "OFERTA"
+  },
+
+  {
+    id: 28,
+    brand: "OX",
+    name: "OX Restaura – Kit Shampoo + Acondicionador",
+    size: "Shampoo 375 ml + Acondicionador 170 ml",
+    category: "Cabello",
+    price: null,
+    image: "assets/Imagen18.jpg",
+    badge: "OFERTA"
+  },
+
+  {
+    id: 29,
+    brand: "Apinil",
+    name: "Apiderm Orquídea – Loción Hidratante Desodorante Corporal",
+    size: "Tamaño según presentación",
+    category: "Cuerpo",
+    price: null,
+    image: "assets/Imagen19.png",
+    badge: "NOVEDAD"
+  },
+
+  {
+    id: 30,
+    brand: "Apinil",
+    name: "Apiderm Rosa Mosqueta – Loción Hidratante Desodorante Corporal",
+    size: "Tamaño según presentación",
+    category: "Cuerpo",
+    price: null,
+    image: "assets/Imagen20.png",
     badge: "NOVEDAD"
   }
+
 ];
+
+
+// =====================================================
+// WHATSAPP
+// =====================================================
 
 const WHATSAPP_NUMBER = "";
