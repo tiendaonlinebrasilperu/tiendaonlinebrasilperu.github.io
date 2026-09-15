@@ -11,17 +11,22 @@
   >
 
   <title>
-    Brasil Perú | Cosmética y Belleza Brasileña
+    Brasil Perú | Cosmética y belleza brasileña
   </title>
 
   <meta
     name="description"
-    content="Brasil Perú: cosmética y belleza brasileña en Perú. Cabello, rizos, rostro, cuerpo, maquillaje, perfumería, cuidado personal y productos para toda la familia."
+    content="Brasil Perú: cosmética y belleza brasileña para Perú. Cabello, rostro, cuerpo, maquillaje, perfumería, cuidado personal, Kids y tratamientos."
+  >
+
+  <meta
+    name="theme-color"
+    content="#171614"
   >
 
   <link
     rel="stylesheet"
-    href="style.css"
+    href="style.css?v=4"
   >
 
 </head>
@@ -30,7 +35,9 @@
 <body>
 
 
-  <!-- TOPBAR -->
+  <!-- =====================================================
+       BARRA SUPERIOR
+  ====================================================== -->
 
   <div class="topbar">
 
@@ -39,7 +46,10 @@
   </div>
 
 
-  <!-- HEADER -->
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
 
   <header class="header">
 
@@ -47,11 +57,10 @@
     <div class="header-main">
 
 
-      <!-- LOGO -->
-
       <a
         class="logo"
         href="#"
+        aria-label="Brasil Perú"
       >
 
         <div class="logo-main">
@@ -59,10 +68,11 @@
         </div>
 
         <div class="logo-sub">
-          Cosmética Brasileña
+          Cosmética brasileña
         </div>
 
       </a>
+
 
 
       <!-- BUSCADOR -->
@@ -77,9 +87,11 @@
           id="searchInput"
           type="search"
           placeholder="Buscar producto, marca o categoría..."
+          aria-label="Buscar productos"
         >
 
       </div>
+
 
 
       <!-- ACCIONES -->
@@ -89,6 +101,7 @@
         <button
           class="icon-btn"
           id="consultButton"
+          type="button"
         >
           💬 Consultar
         </button>
@@ -97,6 +110,7 @@
         <button
           class="icon-btn"
           id="cartButton"
+          type="button"
         >
 
           🛒 Carrito
@@ -116,60 +130,55 @@
     </div>
 
 
-    <!-- MENÚ PRINCIPAL -->
 
-    <nav class="nav">
+    <!-- ===================================================
+         NAVEGACIÓN PRINCIPAL
+    ==================================================== -->
 
+    <nav
+      class="nav"
+      aria-label="Navegación principal"
+    >
 
       <a href="#productos">
         Tienda
       </a>
 
-
       <a href="#categorias">
         Cabello
       </a>
-
 
       <a href="#categorias">
         Rizos
       </a>
 
-
       <a href="#categorias">
         Rostro
       </a>
-
 
       <a href="#categorias">
         Cuerpo
       </a>
 
-
       <a href="#categorias">
         Maquillaje
       </a>
-
 
       <a href="#categorias">
         Perfumería
       </a>
 
-
       <a href="#categorias">
         Kids
       </a>
-
 
       <a href="#categorias">
         Ofertas
       </a>
 
-
       <a href="#marcas">
         Marcas
       </a>
-
 
     </nav>
 
@@ -178,12 +187,13 @@
 
 
 
-  <!-- CONTENIDO PRINCIPAL -->
 
   <main>
 
 
-    <!-- HERO -->
+    <!-- ===================================================
+         HERO
+    ==================================================== -->
 
     <section class="hero">
 
@@ -201,6 +211,7 @@
           </div>
 
 
+
           <h1>
 
             Tu belleza.
@@ -212,12 +223,16 @@
           </h1>
 
 
+
           <p>
 
-            Descubre una selección de cosmética brasileña
-            para cabello, rostro, cuerpo y cuidado personal.
+            Descubre cosmética brasileña seleccionada
+            para tu rutina de belleza y cuidado personal:
+            cabello, rostro, cuerpo, maquillaje,
+            perfumería y mucho más.
 
           </p>
+
 
 
           <div class="hero-actions">
@@ -245,6 +260,8 @@
         </div>
 
 
+
+
         <div class="hero-art">
 
 
@@ -253,11 +270,12 @@
 
             <img
               src="assets/oleodemanga.jpg"
-              alt="Cosmética brasileña Salon Line"
+              alt="Cosmética brasileña Salon Line S.O.S Cachos"
             >
 
 
           </div>
+
 
 
           <div class="hero-label">
@@ -277,7 +295,10 @@
 
 
 
-    <!-- CATEGORÍAS -->
+
+    <!-- ===================================================
+         CATEGORÍAS
+    ==================================================== -->
 
     <section
       class="section"
@@ -290,20 +311,13 @@
 
         <div>
 
-
           <div class="kicker">
-
-            EXPLORA
-
+            Explora
           </div>
 
-
           <h2>
-
             Compra por categoría
-
           </h2>
-
 
         </div>
 
@@ -320,102 +334,120 @@
 
 
 
+
       <div class="categories">
 
-  <button
-    class="category-chip active"
-    data-category="Todos"
-  >
-    Todos
-  </button>
+
+        <button
+          class="category-chip active"
+          data-category="Todos"
+          type="button"
+        >
+          Todos
+        </button>
 
 
-  <button
-    class="category-chip"
-    data-category="Cabello"
-  >
-    Cabello
-  </button>
+        <button
+          class="category-chip"
+          data-category="Cabello"
+          type="button"
+        >
+          Cabello
+        </button>
 
 
-  <button
-    class="category-chip"
-    data-category="Rizos"
-  >
-    Rizos
-  </button>
+        <button
+          class="category-chip"
+          data-category="Rizos"
+          type="button"
+        >
+          Rizos
+        </button>
 
 
-  <button
-    class="category-chip"
-    data-category="Rostro"
-  >
-    Rostro
-  </button>
+        <button
+          class="category-chip"
+          data-category="Rostro"
+          type="button"
+        >
+          Rostro
+        </button>
 
 
-  <button
-    class="category-chip"
-    data-category="Cuerpo"
-  >
-    Cuerpo
-  </button>
+        <button
+          class="category-chip"
+          data-category="Cuerpo"
+          type="button"
+        >
+          Cuerpo
+        </button>
 
 
-  <button
-    class="category-chip"
-    data-category="Maquillaje"
-  >
-    Maquillaje
-  </button>
+        <button
+          class="category-chip"
+          data-category="Maquillaje"
+          type="button"
+        >
+          Maquillaje
+        </button>
 
 
-  <button
-    class="category-chip"
-    data-category="Perfumería"
-  >
-    Perfumería
-  </button>
+        <button
+          class="category-chip"
+          data-category="Perfumería"
+          type="button"
+        >
+          Perfumería
+        </button>
 
 
-  <button
-    class="category-chip"
-    data-category="Cuidado Personal"
-  >
-    Cuidado Personal
-  </button>
+        <button
+          class="category-chip"
+          data-category="Cuidado Personal"
+          type="button"
+        >
+          Cuidado Personal
+        </button>
 
 
-  <button
-    class="category-chip"
-    data-category="Kids"
-  >
-    Kids
-  </button>
+        <button
+          class="category-chip"
+          data-category="Kids"
+          type="button"
+        >
+          Kids
+        </button>
 
 
-  <button
-    class="category-chip"
-    data-category="Tratamientos"
-  >
-    Tratamientos
-  </button>
+        <button
+          class="category-chip"
+          data-category="Tratamientos"
+          type="button"
+        >
+          Tratamientos
+        </button>
 
 
-  <button
-    class="category-chip"
-    data-category="Ofertas"
-  >
-    Ofertas
-  </button>
+        <button
+          class="category-chip"
+          data-category="Ofertas"
+          type="button"
+        >
+          Ofertas
+        </button>
 
-</div>
+
+      </div>
+
 
     </section>
 
 
 
-    <!-- PRODUCTOS -->
+
+    <!-- ===================================================
+         PRODUCTOS
+    ==================================================== -->
 
     <section
       class="section"
@@ -428,20 +460,13 @@
 
         <div>
 
-
           <div class="kicker">
-
-            SELECCIÓN BRASIL PERÚ
-
+            Selección Brasil Perú
           </div>
 
-
           <h2>
-
             Productos destacados
-
           </h2>
-
 
         </div>
 
@@ -457,6 +482,7 @@
       </div>
 
 
+
       <div
         class="products"
         id="productGrid"
@@ -467,7 +493,10 @@
 
 
 
-    <!-- MARCAS -->
+
+    <!-- ===================================================
+         MARCAS
+    ==================================================== -->
 
     <section
       class="section brands"
@@ -480,33 +509,27 @@
 
         <div>
 
-
           <div class="kicker">
-
-            MARCAS
-
+            Marcas
           </div>
 
-
           <h2>
-
-            Marcas brasileñas
-
+            Belleza brasileña
           </h2>
-
 
         </div>
 
 
         <p class="section-intro">
 
-          Descubre marcas reconocidas
+          Trabajaremos con marcas reconocidas
           de cosmética brasileña.
 
         </p>
 
 
       </div>
+
 
 
 
@@ -545,7 +568,10 @@
 
 
 
-    <!-- CONFIANZA -->
+
+    <!-- ===================================================
+         CONFIANZA
+    ==================================================== -->
 
     <section
       class="section"
@@ -558,25 +584,19 @@
 
         <div>
 
-
           <div class="kicker">
-
-            BRASIL PERÚ
-
+            Brasil Perú
           </div>
 
-
           <h2>
-
             Belleza que cruza fronteras
-
           </h2>
-
 
         </div>
 
 
       </div>
+
 
 
 
@@ -608,8 +628,8 @@
 
           <span>
 
-            Trabajaremos una propuesta de
-            entrega para Lima y provincias.
+            Prepararemos opciones de entrega
+            para Lima y provincias.
 
           </span>
 
@@ -625,8 +645,8 @@
 
           <span>
 
-            Te ayudaremos a encontrar los
-            productos adecuados para tu rutina.
+            Te ayudaremos a encontrar los productos
+            adecuados para tu rutina.
 
           </span>
 
@@ -642,8 +662,8 @@
 
           <span>
 
-            Cabello, rostro, cuerpo,
-            maquillaje y cuidado personal.
+            Cabello, rostro, cuerpo, maquillaje,
+            perfumería y cuidado personal.
 
           </span>
 
@@ -660,7 +680,10 @@
 
 
 
-  <!-- FOOTER -->
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
 
   <footer
     class="footer"
@@ -673,13 +696,9 @@
 
       <div>
 
-
         <div class="logo-main">
-
           Brasil Perú
-
         </div>
-
 
         <p>
 
@@ -688,18 +707,16 @@
 
         </p>
 
-
       </div>
+
 
 
 
       <div>
 
-
         <b>
           Categorías
         </b>
-
 
         <p>
 
@@ -709,22 +726,23 @@
           Cuerpo<br>
           Maquillaje<br>
           Perfumería<br>
-          Kids
+          Cuidado personal<br>
+          Kids<br>
+          Tratamientos<br>
+          Ofertas
 
         </p>
-
 
       </div>
 
 
 
-      <div>
 
+      <div>
 
         <b>
           Atención
         </b>
-
 
         <p>
 
@@ -732,7 +750,6 @@
           disponibilidad y productos.
 
         </p>
-
 
       </div>
 
@@ -744,7 +761,10 @@
 
 
 
-  <!-- CARRITO -->
+
+  <!-- =====================================================
+       CARRITO
+  ====================================================== -->
 
   <div
     class="drawer"
@@ -758,30 +778,33 @@
     ></div>
 
 
-    <aside class="panel">
+
+    <aside
+      class="panel"
+      aria-label="Carrito de compras"
+    >
 
 
       <div class="panel-head">
 
 
         <h2>
-
           Tu carrito
-
         </h2>
 
 
         <button
           class="close"
           id="closeCart"
+          type="button"
+          aria-label="Cerrar carrito"
         >
-
           ×
-
         </button>
 
 
       </div>
+
 
 
 
@@ -792,29 +815,27 @@
 
 
 
+
       <div class="cart-foot">
 
 
         <div class="total">
 
-
           <span>
             Total
           </span>
 
-
           <span id="cartTotal">
             Consultar
           </span>
-
 
         </div>
 
 
         <p class="notice">
 
-          Podremos integrar próximamente
-          WhatsApp, pagos y pedidos.
+          Los precios y la disponibilidad
+          se irán incorporando al catálogo.
 
         </p>
 
@@ -829,11 +850,14 @@
 
 
 
-  <!-- JAVASCRIPT -->
 
-  <script src="products.js?v=2"></script>
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
 
-  <script src="script.js?v=3"></script>
+  <script src="products.js?v=3"></script>
+
+  <script src="script.js?v=4"></script>
 
 
 </body>
