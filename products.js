@@ -6,7 +6,7 @@ const PRODUCTS = [
     size: "1 kg",
     category: "Kids",
     price: null,
-    image: "https://tiendaonlinebrasilperu.github.io/assets/cremaparap%20einar.jpg",
+    image: "https://tiendaonlinebrasilperu.github.io/assets/soscachos.jpg",
     badge: "DESTACADO"
   },
 
