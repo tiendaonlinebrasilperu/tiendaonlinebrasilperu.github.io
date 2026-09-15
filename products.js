@@ -61,7 +61,7 @@ const PRODUCTS = [
     name: "Potão do Amor – Creme de Tratamento + Creme de Pentear 2 em 1",
     size: "1 kg",
     category: "Cabello",
-    price: 49.90,
+    price: 28.00,
     image: "https://tiendaonlinebrasilperu.github.io/assets/potaoamor.jpg",
     badge: "NOVEDAD"
   },
@@ -72,7 +72,7 @@ const PRODUCTS = [
     name: "Skala 12 em 1 – Restauração & Brilho",
     size: "1000 g",
     category: "Tratamientos",
-    price: null,
+    price: 28.00,
     image: "https://tiendaonlinebrasilperu.github.io/assets/cremaparapeinar1.jpg",
     badge: "12 EM 1"
   },
@@ -83,7 +83,7 @@ const PRODUCTS = [
     name: "Skala Expert Bomba de Vitaminas",
     size: "1000 g",
     category: "Cabello",
-    price: null,
+    price: 28.00,
     image: "https://tiendaonlinebrasilperu.github.io/assets/skalaexpert.jpg",
     badge: "BOMBA DE VITAMINAS"
   },
@@ -94,7 +94,7 @@ const PRODUCTS = [
     name: "Skala Expert Divino Potão 2 em 1",
     size: "1000 g",
     category: "Rizos",
-    price: null,
+    price: 28.00,
     image: "https://tiendaonlinebrasilperu.github.io/assets/skalaexpertdivinopotao.jpg",
     badge: "2 EM 1"
   },
@@ -105,7 +105,7 @@ const PRODUCTS = [
     name: "Skala Frutástica Uva – Brilho Extremo",
     size: "1000 g",
     category: "Cabello",
-    price: null,
+    price: 28.00,
     image: "https://tiendaonlinebrasilperu.github.io/assets/skalafrutastica.jpg",
     badge: "UVA"
   },
@@ -116,7 +116,7 @@ const PRODUCTS = [
     name: "Skala Frutástica Morango – Nutrição e Brilho",
     size: "1000 g",
     category: "Cabello",
-    price: null,
+    price: 28.00,
     image: "https://tiendaonlinebrasilperu.github.io/assets/skalafrutasticamorango.jpg",
     badge: "MORANGO"
   }
