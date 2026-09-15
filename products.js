@@ -1,9 +1,5 @@
 const PRODUCTS = [
 
-  // =========================
-  // SALON LINE
-  // =========================
-
   {
     id: 1,
     brand: "Salon Line",
@@ -59,11 +55,6 @@ const PRODUCTS = [
     badge: "HIDRATACIÓN"
   },
 
-
-  // =========================
-  // SKALA
-  // =========================
-
   {
     id: 6,
     brand: "Skala Brasil",
@@ -72,22 +63,8 @@ const PRODUCTS = [
     category: "Cabello",
     price: 49.90,
     image: "https://tiendaonlinebrasilperu.github.io/assets/potaoamor.jpg",
-    badge: "NOVEDAD",
-
-    description:
-      "Crema de tratamiento y crema de peinar 2 en 1 para el cuidado del cabello.",
-
-    benefits: [
-      "Hidratación y nutrición",
-      "Ayuda a combatir la resequedad",
-      "Ayuda a controlar el frizz",
-      "Cabello suave y brillante"
-    ],
-
-    idealFor:
-      "Cabellos secos, resecos, dañados o con frizz."
+    badge: "NOVEDAD"
   },
-
 
   {
     id: 7,
@@ -97,22 +74,8 @@ const PRODUCTS = [
     category: "Tratamientos",
     price: null,
     image: "https://tiendaonlinebrasilperu.github.io/assets/cremaparapeinar1.jpg",
-    badge: "12 EM 1",
-
-    description:
-      "Tratamiento de Skala enfocado en restauración y brillo para el cabello.",
-
-    benefits: [
-      "Restauração",
-      "Brilho",
-      "Fios renovados",
-      "12 beneficios"
-    ],
-
-    idealFor:
-      "Cabellos que buscan restauración y brillo."
+    badge: "12 EM 1"
   },
-
 
   {
     id: 8,
@@ -122,21 +85,8 @@ const PRODUCTS = [
     category: "Cabello",
     price: null,
     image: "https://tiendaonlinebrasilperu.github.io/assets/skalaexpert.jpg",
-    badge: "BOMBA DE VITAMINAS",
-
-    description:
-      "Skala Expert Bomba de Vitaminas con ácido hialurónico y propuesta de crecimiento espectacular.",
-
-    benefits: [
-      "Con ácido hialurónico",
-      "Ayuda al cuidado del cabello",
-      "Fórmula con vitaminas"
-    ],
-
-    idealFor:
-      "Personas que buscan fortalecer y cuidar su cabello."
+    badge: "BOMBA DE VITAMINAS"
   },
-
 
   {
     id: 9,
@@ -146,23 +96,8 @@ const PRODUCTS = [
     category: "Rizos",
     price: null,
     image: "https://tiendaonlinebrasilperu.github.io/assets/skalaexpertdivinopotao.jpg",
-    badge: "2 EM 1",
-
-    description:
-      "Crema para peinar + crema hidratante 2 en 1, formulada para cabellos en transición, crespos y cacheados.",
-
-    benefits: [
-      "Crema para peinar",
-      "Crema hidratante",
-      "Con óleos",
-      "Con queratina",
-      "Con colágeno vegetal"
-    ],
-
-    idealFor:
-      "Cabellos en transición, crespos y cacheados."
+    badge: "2 EM 1"
   },
-
 
   {
     id: 10,
@@ -172,22 +107,8 @@ const PRODUCTS = [
     category: "Cabello",
     price: null,
     image: "https://tiendaonlinebrasilperu.github.io/assets/skalafrutastica.jpg",
-    badge: "UVA",
-
-    description:
-      "Skala Frutástica Uva con aceite de semilla de uva, orientada al brillo y cuidado de cabellos débiles y opacos.",
-
-    benefits: [
-      "Brillo extremo",
-      "Con óleo de semilla de uva",
-      "Hidratación",
-      "2 en 1"
-    ],
-
-    idealFor:
-      "Cabellos débiles y opacos."
+    badge: "UVA"
   },
-
 
   {
     id: 11,
@@ -197,27 +118,9 @@ const PRODUCTS = [
     category: "Cabello",
     price: null,
     image: "https://tiendaonlinebrasilperu.github.io/assets/skalafrutasticamorango.jpg",
-    badge: "MORANGO",
-
-    description:
-      "Skala Frutástica Morango con aceite de oliva, orientada a nutrición y brillo.",
-
-    benefits: [
-      "Nutrición",
-      "Brillo",
-      "Con óleo de oliva",
-      "2 en 1"
-    ],
-
-    idealFor:
-      "Cabellos secos y que buscan nutrición y brillo."
+    badge: "MORANGO"
   }
 
 ];
-
-
-// =========================
-// WHATSAPP
-// =========================
 
 const WHATSAPP_NUMBER = "";
