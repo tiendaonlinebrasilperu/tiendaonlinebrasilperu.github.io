@@ -55,7 +55,7 @@ const PRODUCTS = [
     name: "Potão do Amor – Creme de Tratamento + Creme de Pentear 2 em 1",
     size: "1 kg",
     category: "Cabello",
-    price: null,
+    price: 49.90,
     image: "https://tiendaonlinebrasilperu.github.io/assets/potaoamor.jpg",
     badge: "NOVEDAD",
     description: "Tratamiento 2 en 1 ideal para cabellos dañados o resecos. Su fórmula con aceite de ricino, aceite de argán y queratina vegetal ayuda a nutrir, hidratar y fortalecer la fibra capilar, dejando el cabello suave, brillante y con menos frizz. 100% vegano y libre de sulfatos, parabenos, siliconas, petrolatos y aceites minerales."
