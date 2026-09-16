@@ -212,7 +212,7 @@ const PRODUCTS = [
     name: "Meu Liso Restauração Intensa – Kit Reconstrutor",
     size: "Shampoo 300 ml + Acondicionador 200 ml",
     category: "Cabello",
-    price: null,
+    price: 1,
     image: "assets/Imagen6.jpg",
     badge: "OFERTA",
 
@@ -345,7 +345,7 @@ const PRODUCTS = [
     name: "S.O.S Cachos Kids Hidratação – Máscara de Hidratação Intensa",
     size: "500 g",
     category: "Kids",
-    price: null,
+    price: 2,
     image: "assets/Imagen10.jpg",
     badge: "KIDS",
 
@@ -377,7 +377,7 @@ const PRODUCTS = [
     name: "S.O.S Cachos Kids – Creme para Pentear Definição Extraordinária",
     size: "300 ml",
     category: "Kids",
-    price: null,
+    price: 3,
     image: "assets/Imagen11.jpg",
     badge: "KIDS",
 
@@ -409,7 +409,7 @@ const PRODUCTS = [
     name: "Meu Liso Kids – Acondicionador Desembaraçante",
     size: "300 ml",
     category: "Kids",
-    price: null,
+    price: 4,
     image: "assets/Imagen12.jpg",
     badge: "KIDS",
 
@@ -441,7 +441,7 @@ const PRODUCTS = [
     name: "Meu Liso Kids – Creme para Pentear Desembaraçante",
     size: "250 ml",
     category: "Kids",
-    price: null,
+    price: 4,
     image: "assets/Imagen13.jpg",
     badge: "KIDS",
 
@@ -473,7 +473,7 @@ const PRODUCTS = [
     name: "Meu Liso Kids – Shampoo Suave",
     size: "300 ml",
     category: "Kids",
-    price: null,
+    price: 5,
     image: "assets/Imagen14.jpg",
     badge: "KIDS",
 
@@ -720,7 +720,7 @@ const PRODUCTS = [
     name: "OX Colágeno – Kit Shampoo + Acondicionador",
     size: "Shampoo 200 ml + Acondicionador 170 ml",
     category: "Cabello",
-    price: null,
+    price: 6,
     image: "assets/Imagen15.png",
     badge: "OFERTA",
 
@@ -753,7 +753,7 @@ const PRODUCTS = [
     name: "OX Hialurónico – Kit Shampoo + Acondicionador",
     size: "Shampoo 200 ml + Acondicionador 170 ml",
     category: "Cabello",
-    price: null,
+    price: 7,
     image: "assets/Imagen16.jpg",
     badge: "OFERTA",
 
@@ -785,7 +785,7 @@ const PRODUCTS = [
     name: "OX Hidrata – Kit Shampoo + Acondicionador",
     size: "Shampoo 375 ml + Acondicionador 170 ml",
     category: "Cabello",
-    price: null,
+    price: 8,
     image: "assets/Imagen17.jpg",
     badge: "OFERTA",
 
@@ -818,7 +818,7 @@ const PRODUCTS = [
     name: "OX Restaura – Kit Shampoo + Acondicionador",
     size: "Shampoo 375 ml + Acondicionador 170 ml",
     category: "Cabello",
-    price: null,
+    price: 9,
     image: "assets/Imagen18.jpg",
     badge: "OFERTA",
 
@@ -856,7 +856,7 @@ const PRODUCTS = [
     name: "Apiderm Orquídea – Loción Hidratante Desodorante Corporal",
     size: "Tamaño según presentación",
     category: "Cuerpo",
-    price: null,
+    price: 10,
     image: "assets/Imagen19.png",
     badge: "NOVEDAD",
 
@@ -888,7 +888,7 @@ const PRODUCTS = [
     name: "Apiderm Rosa Mosqueta – Loción Hidratante Desodorante Corporal",
     size: "Tamaño según presentación",
     category: "Cuerpo",
-    price: null,
+    price: 11,
     image: "assets/Imagen20.png",
     badge: "NOVEDAD",
 
