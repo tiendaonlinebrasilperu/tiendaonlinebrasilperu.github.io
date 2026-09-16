@@ -10,7 +10,7 @@ const PRODUCTS = [
     name: "S.O.S Cachos Kids Hidratação – Creme para Pentear Multifuncional 5 em 1",
     size: "1 kg",
     category: "Kids",
-    price: null,
+    price: 85.00,
     image: "assets/soscachos.jpg",
     badge: "DESTACADO",
 
@@ -42,7 +42,7 @@ const PRODUCTS = [
     name: "S.O.S Cachos Kids Hidratação – Acondicionador",
     size: "300 ml",
     category: "Kids",
-    price: null,
+    price: 45.90,
     image: "assets/Acondicionador.png",
     badge: "KIDS",
 
@@ -79,7 +79,7 @@ const PRODUCTS = [
     name: "Creme para Pentear Definição Natural",
     size: "1 kg",
     category: "Rizos",
-    price: null,
+    price: 120,.00,
     image: "assets/Imagen1.jpg",
     badge: "NOVEDAD",
 
@@ -111,7 +111,7 @@ const PRODUCTS = [
     name: "Creme para Pentear Definição Cachos Ostentação",
     size: "1 kg",
     category: "Rizos",
-    price: null,
+    price: 120.00,
     image: "assets/Imagen2.jpg",
     badge: "NOVEDAD",
 
@@ -143,7 +143,7 @@ const PRODUCTS = [
     name: "Creme para Pentear Definição Duradoura – Cachos dos Sonhos",
     size: "1 kg",
     category: "Rizos",
-    price: null,
+    price: 220.00,
     image: "assets/Imagen4.jpg",
     badge: "NOVEDAD",
 
@@ -175,7 +175,7 @@ const PRODUCTS = [
     name: "Creme para Pentear Mistura Pronta Super Óleos",
     size: "1 kg",
     category: "Rizos",
-    price: null,
+    price: 90.00,
     image: "assets/Imagen5.jpg",
     badge: "NOVEDAD",
 
@@ -244,7 +244,7 @@ const PRODUCTS = [
     name: "Meu Liso Demais – Kit Alinhador",
     size: "Shampoo 300 ml + Acondicionador 200 ml",
     category: "Cabello",
-    price: null,
+    price: 65.00,
     image: "assets/Imagen7.jpg",
     badge: "OFERTA",
 
@@ -276,7 +276,7 @@ const PRODUCTS = [
     name: "Meu Liso Escudo Antiporosidade – Kit Equilíbrio do pH",
     size: "Shampoo 300 ml + Acondicionador 200 ml",
     category: "Cabello",
-    price: null,
+    price: 130.00,
     image: "assets/Imagen8.jpg",
     badge: "OFERTA",
 
@@ -308,7 +308,7 @@ const PRODUCTS = [
     name: "Meu Liso Reparação Pós-Química – Acondicionador Reparador",
     size: "300 ml",
     category: "Cabello",
-    price: null,
+    price: 75.00,
     image: "assets/Imagen9.jpg",
     badge: "OFERTA",
 
