@@ -79,7 +79,7 @@ const PRODUCTS = [
     name: "Creme para Pentear Definição Natural",
     size: "1 kg",
     category: "Rizos",
-    price: 120,.00,
+    price: 120.00,
     image: "assets/Imagen1.jpg",
     badge: "NOVEDAD",
 
