@@ -182,7 +182,9 @@ const PRODUCTS = [
     category: "Cabello",
     price: 35.00,
     image: "assets/potaoamor.jpg",
-    badge: "NOVEDAD"
+    badge: "NOVEDAD",
+
+    description: "Crema de tratamiento y crema para peinar 2 en 1 de Skala Brasil. Una fórmula práctica para complementar la rutina de cuidado capilar y ayudar a mantener el cabello suave, nutrido y con una apariencia saludable."
   },
 
   {
@@ -193,7 +195,30 @@ const PRODUCTS = [
     category: "Tratamientos",
     price: 35.00,
     image: "assets/cremaparapeinar1.jpg",
-    badge: "NOVEDAD"
+    badge: "NOVEDAD",
+
+    description: "Crema de Tratamiento Capilar Vegana – 12 Beneficios | 1000 g. Transforma el cuidado de tu cabello con esta crema de tratamiento capilar vegana de 12 beneficios, desarrollada para brindar una experiencia de cuidado integral y devolverle a tu cabello una apariencia saludable, suave y radiante. Su fórmula, 100 % libre de ingredientes de origen animal, ayuda a nutrir, hidratar y revitalizar la fibra capilar, favoreciendo un cabello con mayor suavidad, brillo y apariencia renovada. Su textura cremosa facilita la aplicación y permite incorporarla fácilmente a tu rutina de cuidado capilar. Ideal para todo tipo de cabello, esta mascarilla de 1000 g es una excelente alternativa para quienes buscan combinar eficacia, cuidado y belleza consciente en un solo producto.",
+
+    benefits: [
+      "Ayuda a mantener una hidratación profunda.",
+      "Favorece un cabello más suave y brillante.",
+      "Contribuye a fortalecer la apariencia de la fibra capilar.",
+      "Fórmula vegana, sin ingredientes de origen animal.",
+      "Ayuda a revitalizar el cabello con apariencia opaca o debilitada.",
+      "Ideal para complementar la rutina de tratamiento capilar.",
+      "Apta para todo tipo de cabello.",
+      "Presentación de 1000 g, ideal para un uso prolongado."
+    ],
+
+    idealFor: "Todo tipo de cabello.",
+
+    features: [
+      "100 % vegano",
+      "12 beneficios",
+      "1000 g",
+      "Tratamiento capilar",
+      "Restauração e Brilho"
+    ]
   },
 
   {
