@@ -912,7 +912,14 @@ const PRODUCTS = [
       "Loción hidratante corporal",
       "Fragancia de rosa mosqueta"
     ]
-      {
+  },
+
+
+  // =====================================================
+  // NUEVO PRODUCTO – SALON LINE MEU LISO
+  // =====================================================
+
+  {
     id: 31,
     brand: "Salon Line",
     name: "Meu Liso Restauração Intensa – Shampoo Reconstrutor",
