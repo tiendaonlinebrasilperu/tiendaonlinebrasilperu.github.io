@@ -912,6 +912,38 @@ const PRODUCTS = [
       "Loción hidratante corporal",
       "Fragancia de rosa mosqueta"
     ]
+      {
+    id: 31,
+    brand: "Salon Line",
+    name: "Meu Liso Restauração Intensa – Shampoo Reconstrutor",
+    size: "300 ml",
+    category: "Cabello",
+    price: 30.00,
+    image: "assets/meurisorestauracionintensa.jpg",
+    badge: "NUEVO",
+
+    description:
+      "Shampoo reconstructor de la línea Meu Liso Restauração Intensa, desarrollado para la limpieza y el cuidado de cabellos lisos y ondulados que presentan signos de daño. Su propuesta está orientada al cuidado de la fibra capilar y a mejorar la apariencia de cabellos con fragilidad, resequedad, frizz, quiebre u opacidad.",
+
+    benefits: [
+      "Ayuda a combatir la apariencia de daños acumulados.",
+      "Ayuda a fortalecer cabellos fragilizados.",
+      "Contribuye al cuidado de las puntas abiertas.",
+      "Ayuda a controlar el frizz y la opacidad.",
+      "Favorece una apariencia más hidratada y saludable.",
+      "Con tecnología Total Repair 360.",
+      "Contiene aminoácidos, creatina, biotina y D-pantenol."
+    ],
+
+    idealFor:
+      "Cabellos lisos y ondulados con daño, fragilidad, resequedad, frizz, quiebre u opacidad.",
+
+    features: [
+      "Shampoo reconstructor",
+      "Contenido: 300 ml",
+      "Línea Meu Liso Restauração Intensa",
+      "Marca: Salon Line"
+    ]
   }
 
 ];
